@@ -1,1 +1,2 @@
-/* No CSS *//*# sourceMappingURL=style.min.css.map */
+*{-webkit-box-sizing:border-box;box-sizing:border-box}p{margin:0}.tabs{display:-webkit-box;display:-ms-flexbox;display:flex;gap:30px;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;margin-bottom:30px}.form__inner{display:-webkit-box;display:-ms-flexbox;display:flex;gap:30px}.form__selects{display:-webkit-box;display:-ms-flexbox;display:flex;gap:30px}.tab{padding:5px;cursor:pointer}.tab.active{border-bottom:2px solid #000;cursor:default}.content{display:none}.content.show{display:block}
+/*# sourceMappingURL=style.min.css.map */

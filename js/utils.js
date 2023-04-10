@@ -10,4 +10,13 @@ function formatToCurrency(code, amount) {
   }).format(amount);
 }
 
-export { getFullName, formatToCurrency };
+function convertTime(date) {
+  const options = {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  };
+  return new Intl.DateTimeFormat("en-US", options).format(new Date(date));
+}
+
+export { getFullName, formatToCurrency, convertTime };

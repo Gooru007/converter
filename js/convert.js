@@ -1,9 +1,17 @@
 import state from "./state.js";
 import vars from "./vars.js";
-import { getFullName, formatToCurrency } from "./utils.js";
+import { getFullName, formatToCurrency, convertTime } from "./utils.js";
 import { createResultTemplate } from "./markups.js";
 
-const { success, resultFrom, resultTo, convesionRate, updateTime } = vars;
+const {
+  success,
+  resultFrom,
+  resultTo,
+  convesionRate,
+  lastUpdate,
+  selectFrom,
+  selectTo,
+} = vars;
 
 function onChangeHandler({ target: { value, name } }) {
   state.pair = {
@@ -73,6 +81,25 @@ function renderResults({
   const targetValue = formatToCurrency(targetCode, rate);
 
   convesionRate.textContent = `${baseValue} = ${targetValue}`;
+  lastUpdate.textContent = `Last updated ${convertTime(updateTime)}`;
 }
 
-export { onChangeHandler, onInputHandler, onSubmitHandler };
+function onSwitchHandler() {
+  const {
+    pair: { from, to },
+  } = state;
+
+  if (!from || !to) {
+    return;
+  }
+
+  state.pair = {
+    from: to,
+    to: from,
+  };
+
+  selectFrom.value = to;
+  selectTo.value = from;
+}
+
+export { onChangeHandler, onInputHandler, onSubmitHandler, onSwitchHandler };

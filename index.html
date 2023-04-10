@@ -16,16 +16,10 @@
         <h1></h1>
         <div class="wrapper">
           <div class="tabs">
-            <div class="tab">
-              <img src="" alt="#" />
-              <p>Convert</p>
-            </div>
-            <div class="tab">
-              <img src="" alt="#" />
-              <p>Single</p>
-            </div>
+            <div class="tab active" data-tab="convert">Convert</div>
+            <div class="tab" data-tab="single">Single</div>
           </div>
-          <div class="content">
+          <div class="content show" data-tab-content="convert">
             <form action="#" class="form">
               <div class="form__inner">
                 <div class="form__group">
@@ -52,7 +46,15 @@
                       </option>
                     </select>
                   </div>
-                  <div class="form__switch"></div>
+                  <div class="form__switch">
+                    <button
+                      type="button"
+                      class="btn btn--switch"
+                      id="switchCurrency"
+                    >
+                      switch
+                    </button>
+                  </div>
                   <div class="form__group">
                     <label for="to">To</label>
                     <select
@@ -82,7 +84,13 @@
               </div>
             </form>
           </div>
-          <div class="content"></div>
+          <div class="content" data-tab-content="single">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Aspernatur excepturi enim laborum nihil sed et corporis nostrum
+              architecto nemo minus.
+            </p>
+          </div>
         </div>
       </div>
     </main>

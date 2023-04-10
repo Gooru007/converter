@@ -7,5 +7,9 @@ export default {
   resultFrom: document.querySelector("#resultFrom"),
   resultTo: document.querySelector("#resultTo"),
   convesionRate: document.querySelector(".form__result-rate"),
-  updateTime: document.querySelector(".form__result-update"),
+  lastUpdate: document.querySelector(".form__result-update"),
+  switchBtn: document.querySelector("#switchCurrency"),
+  selectFrom: document.querySelector("#from"),
+  selectTo: document.querySelector("#to"),
+  tabs: document.querySelector(".tabs"),
 };
