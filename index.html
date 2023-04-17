@@ -85,11 +85,25 @@
             </form>
           </div>
           <div class="content" data-tab-content="single">
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Aspernatur excepturi enim laborum nihil sed et corporis nostrum
-              architecto nemo minus.
-            </p>
+            <div class="currency__wrapper">
+              <div class="currency__single">
+                <div class="currency__single-item"></div>
+                <select id="singleSelect" class="select">
+                  <option value="" disabled selected hidden>
+                    Choose currency
+                  </option>
+                </select>
+              </div>
+              <div class="currency__list"></div>
+            </div>
+            <div class="currency__add">
+              <button class="currency__add-btn">Add currency</button>
+              <select id="addCurrencySelect" class="select">
+                <option value="" disabled selected hidden>
+                  Choose currency
+                </option>
+              </select>
+            </div>
           </div>
         </div>
       </div>

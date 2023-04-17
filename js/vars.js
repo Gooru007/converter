@@ -12,4 +12,6 @@ export default {
   selectFrom: document.querySelector("#from"),
   selectTo: document.querySelector("#to"),
   tabs: document.querySelector(".tabs"),
+  currentCurrency: document.querySelector(".currency__single-item"),
+  currencyList: document.querySelector(".currency__list"),
 };

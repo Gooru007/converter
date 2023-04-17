@@ -7,4 +7,7 @@ export default {
   },
   amount: "",
   currentTab: "convert",
+  singleCurrency: {
+    code: "USD",
+  },
 };

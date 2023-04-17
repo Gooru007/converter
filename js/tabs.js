@@ -13,8 +13,20 @@ function onTabClickHandler({ target }) {
     }
 
     [...tabs.children].forEach((tab) => {
-      console.log(tab);
+      tab.classList.remove("active");
     });
+
+    target.classList.add("active");
+
+    tabContents.forEach((content) => {
+      if (content.dataset.tabContent === activeTab) {
+        content.classList.add("show");
+      } else {
+        content.classList.remove("show");
+      }
+    });
+
+    state.currentTab = activeTab;
   }
 }
 export { onTabClickHandler };
