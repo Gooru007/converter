@@ -7,7 +7,12 @@ export default {
   },
   amount: "",
   currentTab: "convert",
-  singleCurrency: {
+  currency: {
     code: "USD",
+  },
+  currencies: ["USD", "EUR", "PLN", "UAH"],
+  actions: {
+    remove: "remove",
+    change: "change",
   },
 };

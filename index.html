@@ -36,7 +36,7 @@
                   <div class="form__group">
                     <label for="from">From</label>
                     <select
-                      class="form__currency-select"
+                      class="form__currency-select select-pair"
                       name="from"
                       id="from"
                       required
@@ -58,7 +58,7 @@
                   <div class="form__group">
                     <label for="to">To</label>
                     <select
-                      class="form__currency-select"
+                      class="form__currency-select select-pair"
                       name="to"
                       id="to"
                       required
@@ -88,7 +88,7 @@
             <div class="currency__wrapper">
               <div class="currency__single">
                 <div class="currency__single-item"></div>
-                <select id="singleSelect" class="select">
+                <select id="singleSelect" class="select form__currency-select">
                   <option value="" disabled selected hidden>
                     Choose currency
                   </option>
@@ -98,7 +98,10 @@
             </div>
             <div class="currency__add">
               <button class="currency__add-btn">Add currency</button>
-              <select id="addCurrencySelect" class="select">
+              <select
+                id="addCurrencySelect"
+                class="select form__currency-select"
+              >
                 <option value="" disabled selected hidden>
                   Choose currency
                 </option>

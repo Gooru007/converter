@@ -35,3 +35,40 @@ p {
     display: block;
   }
 }
+
+.currency__item {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.currency__single {
+  position: relative;
+  .select {
+    position: absolute;
+    right: 100px;
+    top: 0;
+    display: none;
+  }
+  &.active {
+    .select {
+      display: block;
+    }
+  }
+}
+
+.currency__add {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 200px;
+  position: relative;
+  .select {
+    position: absolute;
+    right: 200px;
+    display: none;
+  }
+  &.active {
+    .select {
+      display: block;
+    }
+  }
+}

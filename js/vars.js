@@ -14,4 +14,7 @@ export default {
   tabs: document.querySelector(".tabs"),
   currentCurrency: document.querySelector(".currency__single-item"),
   currencyList: document.querySelector(".currency__list"),
+  singleSelect: document.querySelector("#singleSelect"),
+  addCurrencyBtn: document.querySelector(".currency__add-btn"),
+  addCurrencySelect: document.querySelector("#addCurrencySelect"),
 };
